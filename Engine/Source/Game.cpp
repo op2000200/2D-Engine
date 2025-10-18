@@ -23,12 +23,12 @@ namespace Engine
     {
         while (true)
         {
-            window.update(renderQueue);
+            window.update(activeScene);
         }
     }
 
-    void Game::addObjectToRender(Object* obj)
+    void Game::setActiveScene(Scene *scene)
     {
-        renderQueue.push_back(obj);
+        activeScene = scene;
     }
 } // namespace engine

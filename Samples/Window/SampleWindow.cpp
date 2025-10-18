@@ -8,7 +8,9 @@ int main()
     config.windowTitle = "Engine";
     config.debugInfo = true;
     Engine::Game game(config);
+    Engine::Scene* redCube = new Engine::Scene;
     Engine::Rectangle rect(sf::Vector2f(500,500),sf::Vector2i(100,100), sf::Color::Red);
-    game.addObjectToRender(&rect);
+    redCube->addObjectToRender(&rect);
+    game.setActiveScene(redCube);
     game.run();
 }

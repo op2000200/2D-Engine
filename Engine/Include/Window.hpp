@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Object.hpp>
+#include <Scene.hpp>
 
 namespace Engine
 {
@@ -13,6 +14,7 @@ namespace Engine
         Window(Config config);
         ~Window();
 
-        void update(std::vector<Object*> renderQueue);
+        void update(Scene *scene);
+        void drawScene(Scene *scene);
     };        
 } // namespace engine

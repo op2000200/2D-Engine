@@ -14,9 +14,11 @@ add_library(Engine STATIC
     Include/Game.hpp
     Include/Things.hpp
     Include/Object.hpp
+    Include/Scene.hpp
     Source/Window.cpp
     Source/Game.cpp
     Source/Object.cpp
+    Source/Scene.cpp
 )
 
 set_target_properties(Engine PROPERTIES LINKER_LANGUAGE CXX)

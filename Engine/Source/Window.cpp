@@ -17,13 +17,19 @@ namespace Engine
     {
     }
 
-    void Window::update(std::vector<Object*> renderQueue)
+    void Window::update(Scene *scene)
     {
         window.clear();
+        drawScene(scene);
+        window.display();
+    }
+
+    void Window::drawScene(Scene *scene)
+    {
+        std::vector<Object*> renderQueue = scene->getRenderQueue();
         for (size_t i = 0; i < renderQueue.size(); i++)
         {
             window.draw(*renderQueue[i]);
         }
-        window.display();
     }
 } // namespace engine

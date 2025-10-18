@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Window.hpp>
+#include <Scene.hpp>
 
 namespace Engine
 {
@@ -8,13 +9,13 @@ namespace Engine
     {
     private:
         Engine::Window window;
-        std::vector<Object*> renderQueue;
+        Scene* activeScene;
     public:
         Game();
         Game(Config config);
         ~Game();
 
         void run();
-        void addObjectToRender(Object*);
+        void setActiveScene(Scene* scene);
     };
 } // namespace engine
