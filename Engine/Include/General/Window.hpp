@@ -1,7 +1,7 @@
 #pragma once
 
-#include <Object.hpp>
-#include <Scene.hpp>
+#include <General/Object.hpp>
+#include <GameElements/Scene.hpp>
 
 namespace Engine
 {
@@ -9,6 +9,8 @@ namespace Engine
     {
     private:
         sf::RenderWindow window;
+        sf::Time screenRefreshTime;
+        sf::Time gameRefreshTime;
     public:
         Window();
         Window(Config config);

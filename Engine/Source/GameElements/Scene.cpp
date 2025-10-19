@@ -1,4 +1,4 @@
-#include "Scene.hpp"
+#include "GameElements/Scene.hpp"
 
 namespace Engine
 {
@@ -14,4 +14,4 @@ namespace Engine
     {
         renderQueue.push_back(obj);
     }
-}
+} //namespace Engine

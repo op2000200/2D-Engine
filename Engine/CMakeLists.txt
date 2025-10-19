@@ -10,15 +10,15 @@ FetchContent_Declare(SFML
 FetchContent_MakeAvailable(SFML)
 
 add_library(Engine STATIC
-    Include/Window.hpp
+    Include/General/Window.hpp
     Include/Game.hpp
-    Include/Things.hpp
-    Include/Object.hpp
-    Include/Scene.hpp
-    Source/Window.cpp
+    Include/General/Things.hpp
+    Include/General/Object.hpp
+    Include/GameElements/Scene.hpp
+    Source/General/Window.cpp
     Source/Game.cpp
-    Source/Object.cpp
-    Source/Scene.cpp
+    Source/General/Object.cpp
+    Source/GameElements/Scene.cpp
 )
 
 set_target_properties(Engine PROPERTIES LINKER_LANGUAGE CXX)

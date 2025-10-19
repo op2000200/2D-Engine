@@ -12,6 +12,8 @@ namespace Engine
     {
         sf::Vector2i resolution;
         std::string windowTitle;
+        int screenRefreshRate = 60;
+        int gameRefreshRate = 1000;
         bool debugInfo = false;
     };    
 } // namespace Engine

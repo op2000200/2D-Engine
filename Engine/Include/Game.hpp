@@ -1,7 +1,7 @@
 #pragma once
 
-#include <Window.hpp>
-#include <Scene.hpp>
+#include <General/Window.hpp>
+#include <GameElements/Scene.hpp>
 
 namespace Engine
 {

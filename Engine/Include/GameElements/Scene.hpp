@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Object.hpp>
+#include <General/Object.hpp>
 
 namespace Engine
 {
@@ -14,5 +14,13 @@ namespace Engine
 
         std::vector<Object*> getRenderQueue() {return renderQueue;};
         void addObjectToRender(Object* obj);
+    };
+
+    class StaticScene : public Scene
+    {
+        private:
+        public:
+            StaticScene();
+            ~StaticScene();
     };
 } // namespace Engine
