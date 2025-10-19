@@ -15,5 +15,11 @@ namespace Engine
         int screenRefreshRate = 60;
         int gameRefreshRate = 1000;
         bool debugInfo = false;
-    };    
+    };
+
+    struct GameObjectProperties
+    {
+        int healthPoints;
+        bool indestructable = false;
+    };
 } // namespace Engine
