@@ -15,7 +15,7 @@ namespace Engine
         std::vector<Object*> getRenderQueue() {return renderQueue;};
         void addObjectToRender(Object* obj);
     };
-
+    /*
     class StaticScene : public Scene
     {
         private:
@@ -23,4 +23,5 @@ namespace Engine
             StaticScene();
             ~StaticScene();
     };
+    */
 } // namespace Engine
